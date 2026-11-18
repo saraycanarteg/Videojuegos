@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cfib86in5f37h" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="PackedScene" uid="uid://dx1t06tlb3if5" path="res://player_base.tscn" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://ddeie1vjc8a40" path="res://player.gd" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://bmhl7t68lrnhk" path="res://icon.svg" id="4_1bvp3"]
 
 [node name="Main" type="Node2D" unique_id=936937997]
 script = ExtResource("1_h2yge")
@@ -15,3 +16,7 @@ offset_bottom = 63.0
 
 [node name="Player" parent="." unique_id=1594910032 instance=ExtResource("1_ig7tw")]
 script = ExtResource("2_0xm2m")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1961314285]
+position = Vector2(61, 524)
+texture = ExtResource("4_1bvp3")
